@@ -13,7 +13,7 @@
 /**elementos base*/
 body{
   background: var(--preta);
-  font-family: 'Times New Roman', Times, serif;
+  font-family: 'Arial', Times, serif;
   color: white;
 }
 
@@ -41,6 +41,10 @@ header nav a:hover{
   color: #fff;
 }
 
+.menu{
+  margin: 10px;
+}
+
 /**
 filme principal
 */
@@ -60,12 +64,105 @@ filme principal
 
 .filme-principal .descricao{
   margin-bottom: 40px;
+  margin-top: 20px;
 }
 
 .titulo{
+  margin-top: 15%;
   font-size: 45px;
+  font-family: 'Trebuchet MS', Arial, sans-serif;
+
 }
 
+.botao{
+    background-color: rgba(0,0,0,.50) ;
+    border: none;
+    color: white;
 
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 12px;
 
+    cursor: pointer;
+    transition: .3s ease all;
+  }
+
+  .botao:hover{
+    background-color: white ;
+    color: black;
+  }
+
+.botao i{
+  margin-right: 8px;
+}
+
+.container{
+  margin-left: 20px;
+}
+
+.filme-principal .container{
+  width: 80%;
+}
+
+.box-filme{
+  height: 100%;
+  width: 100%;
+  display: block;
+
+  cursor: pointer;
+}
+
+.carrosel-filmes{
+  margin-top: 5px;
+}
+
+/*filmes*/
+.Filme-principal{
+  font-size: 16px;
+  background:  linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('/img/vingadores.jpg'); /*linear-gradient-cria uma camada fina em cima da imagem */
+
+  height: 600px;
+  background-size:cover;
+
+  display: flex;
+  flex-direction: column;
+  justify-content:flex-end;
+  align-items: flex-start;
+
+}
+
+.Botao{
+  background-color: rgba(0,0,0,.50) ;
+  border: none;
+  color: white;
+
+  padding: 15px 30px;
+  margin-right: 15px;
+  margin-bottom: 15px;
+  font-size: 12px;
+
+  cursor: pointer;
+  transition: .3s ease all;
+}
+
+.Botao:hover{
+  background-color: white ;
+  color: black;
+}
+
+.Botao i{
+margin-right: 8px;
+}
+
+.Filme-principal .Descricao{
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+
+.Titulo{
+  margin-top: 10%;
+  font-size: 45px;
+  font-family: 'Trebuchet MS', Arial, sans-serif;
+
+}
 
