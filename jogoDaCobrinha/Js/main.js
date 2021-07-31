@@ -48,6 +48,13 @@ function update (event){
 /**função do inicio do jogo */
 function iniciarJogo(){
 
+  for(i =  1; i < snake.length; i++){
+    if(snake[0].x == snake[i].x && snake[0].y == snake[i].y){
+      clearInterval(jogo);
+      alert('Game Over');
+    }
+  }
+
 /*quando sair do quadrado, ela aparece do lado oposto*/
   if(snake[0].x> 15 * box && direction == "right") snake[0].x =0;
   if(snake[0].x< 0 && direction == "left") snake[0].x = 16*box;
@@ -66,7 +73,7 @@ function iniciarJogo(){
     if(direction == "up") snakeY -= box;
     if(direction == "down") snakeY+= box;
 
-    /*quando comer a maça, a maçã some*/
+    /*quando comer a maça, e aumentando tamanho da cobrinha*/
     if(snakeX != food.x || snakeY != food.y){
       /**retira o ultimo elemento*/
       snake.pop();
